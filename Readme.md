@@ -22,3 +22,6 @@ alert(s);
 
 s = "Python syntax highlighting"
 print s
+
+```java
+Object o = new Object();
