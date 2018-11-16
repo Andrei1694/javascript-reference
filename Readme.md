@@ -25,3 +25,4 @@ print s
 
 ```java
 Object o = new Object();
+System.out.println();
