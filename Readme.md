@@ -3,6 +3,6 @@
 ### 1.0 Javascript Snake
 ## 2. Functions
 ### 2.1 Hoisting
-'''javascript
+```javascript
   var a = 3;
-'''
+```
