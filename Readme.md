@@ -9,7 +9,9 @@
 ## 3. Objects
 
 ### 3.1 Objects and Proprieties
+#### Object create using literal
 ```javascript
+// Object literal
 var john = {
     firstName: 'John',
     lastName: 'Smith',
@@ -27,7 +29,9 @@ console.log(john[x]);
 john.job = 'designer';
 john['isMarried'] = true;
 console.log(john);
+```
 
+```javascript
 // new Object syntax
 var jane = new Object();
 jane.firstName = 'Jane';
