@@ -1,7 +1,7 @@
 # Javascript Reference
 ## Usefull Resources
-https://nodeschool.io/
-https://www.w3schools.com/
+* https://nodeschool.io/
+* https://www.w3schools.com/
 ## 0. Code Exercises
 ### 1.0 Javascript Snake
 ## 2. Functions
