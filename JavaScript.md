@@ -5,9 +5,16 @@ https://www.w3schools.com/
 ## 0. Code Exercises
 ### 1.0 Javascript Snake
 ## 2. Functions
-### 2.1 Execution Contexts and the Execution Stack
+### 2.1 Execution Contexts and the Execution Stack Hoisting
+The engine is the part of the browser that runs JavaScript code. (Google's V8 used in Chrome and Node.js).
+When you run JavaScript in a browser( or Node ) the engine goes through a series of steps. 
+1) The engine creates the Global Execution Context.
+2) The engine scans the code for variable and function declarations and stores them in the Global Memory. Variable Object
+for the code 
+When a variable declaration is stored in the Variable Object, the variable is set to undefined.
+Hoisting does't apply for function expression.
 
-### 2.1 Hoisting
+Example of HOISTING
 JavaScript only hoists declarations, not initializations. If a variable is declared and initialized after using it, the value will be undefined. For example:
 ```javascript
   console.log(num); // Returns undefined 
