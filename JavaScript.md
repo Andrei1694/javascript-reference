@@ -1,12 +1,38 @@
 # Javascript Reference
-## Resurse
+## Usefull Resources
 https://nodeschool.io/
+https://www.w3schools.com/
 ## 0. Code Exercises
 ### 1.0 Javascript Snake
 ## 2. Functions
+### 2.1 Execution Contexts and the Execution Stack
+
 ### 2.1 Hoisting
+JavaScript only hoists declarations, not initializations. If a variable is declared and initialized after using it, the value will be undefined. For example:
 ```javascript
-  var a = 3;
+  console.log(num); // Returns undefined 
+  var num;
+  num = 6;
+```
+```javascript
+  console.log(num); // Returns undefined 
+  var num;
+  num = 6;
+```
+The below two examples demonstrate the same behavior.
+```javascript
+    var x = 1; // Initialize x
+    console.log(x + " " + y); // '1 undefined'
+    var y = 2; // Initialize y
+
+    // The above example is implicitly understood as this: 
+    var x; // Declare x
+    var y; // Declare y
+    // End of the hoisting.
+
+    x = 1; // Initialize x
+    console.log(x + " " + y); // '1 undefined'
+    y = 2; // Initialize y
 ```
 ## 3. Objects
 
