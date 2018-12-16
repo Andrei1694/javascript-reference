@@ -1,4 +1,6 @@
 # Javascript Reference
+## Resurse
+https://nodeschool.io/
 ## 0. Code Exercises
 ### 1.0 Javascript Snake
 ## 2. Functions
