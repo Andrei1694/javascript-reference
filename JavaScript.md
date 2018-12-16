@@ -8,8 +8,28 @@ https://www.w3schools.com/
 ### 2.1 Execution Contexts and the Execution Stack Hoisting
 The engine is the part of the browser that runs JavaScript code. (Google's V8 used in Chrome and Node.js).
 When you run JavaScript in a browser( or Node ) the engine goes through a series of steps. 
-Execution Context is a container in which a piece of our code is evaluated and executed.
-Global Execution Context
+
+####Execution Stack (Call Stack)
+Each time a function is called from the Global Execution Context, a new Execution Context is created and added to the Execution Stack on top of the current Execution Context.
+If the function contains variable declarations, those declarations are not added to the Global Execution Context but instead they are added to the current Execution Context.
+When the function returns ( when the work is done ) the current Execution Context is removed from the top of the Execution Stack.
+
+####Execution Context 
+Is a container in which a piece of our code is evaluated and executed. We can associate an execution context with an object, and this object has three properties:
+1. The Variable Object ---> contains function arguments, function declarations
+2. The Scope Chain ---> 
+3. this variable
+When a function is called, a new execution context is put on top of the execution stack, and this happens in two phases:
+1. Creation Phase
+   1. First in the Creation Phase, we first have the creation of the variable object.
+   2. Creation of the scope chain
+   3. Determine value of the this variable
+2. Execution Phase
+   The code of the function that generated the current execution context is ran line by line.
+   The argument object is created, containing all
+
+####Global Execution Context
+
 1. Code that is not inside any function.
 2. Associated with the global object.
 3. In the browser, that's the window object.
@@ -18,6 +38,7 @@ Global Execution Context
   var lastName = "John";
   // lastName === window.lastName;
 ```
+
 
 1) The engine creates the Global Execution Context.
 2) The engine scans the code for variable and function declarations and stores them in the Global Memory. Variable Object
