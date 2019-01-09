@@ -24,6 +24,9 @@ npm cache clean
 
 [sudo] npm install -g @angular/cli 
 
+### Angular Routing
+
+
 ### How to...
 - How to add Bulma to Angular
 * https://scotch.io/courses/build-your-first-angular-website/adding-bulma-css-to-an-angular-app
