@@ -10,20 +10,27 @@
 * https://www.journaldev.com/1377/java-singleton-design-pattern-best-practices-examples
 
 ```java
-    class SingletonExample{
+public class Main {
+
+class SingletonExample {
 
     private static SingletonExample INSTANCE = null;
 
     private SingletonExample() {
         System.out.println("Singleton Created");
+        System.out.println(this.hashCode());
     }
 
     public static SingletonExample getInstance(){
         if(INSTANCE == null){
-            return new SingletonExample();
+            INSTANCE = new SingletonExample();
+            
+            return INSTANCE;
         }
         return INSTANCE;
     }
 }
 ```
+#### 
+
     
