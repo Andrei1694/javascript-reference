@@ -5,8 +5,8 @@
 * A member with no access modifier (j) is only accessible within classes in the same package.
 * A protected member (k) is accessible within all classes in the same package and within subclasses in other packages.
 * A public member (l) is accessible to all classes (unless it resides in a module that does not export the package it is declared in).
-### Design Patterns
-#### Singleton
+## Design Patterns
+### Singleton
 * https://www.journaldev.com/1377/java-singleton-design-pattern-best-practices-examples
 
 ```java
@@ -48,5 +48,9 @@ public class BillPughSingleton {
 }
 ```
 #### 
-
+### Observer Pattern
+* https://www.journaldev.com/1739/observer-design-pattern-in-java
+* https://sourcemaking.com/design_patterns/observer
+* https://www.baeldung.com/java-observer-pattern
+* https://refactoring.guru/design-patterns/observer
     
