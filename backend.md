@@ -5,3 +5,4 @@ In information technology, a repository is a central place in which an aggregati
 ### What is a DAO ?
 
 * https://stackoverflow.com/questions/14014086/what-is-difference-between-crudrepository-and-jparepository-interfaces-in-spring
+* https://blog.sapiensworks.com/post/2012/11/01/Repository-vs-DAO.aspx?fbclid=IwAR0qfJMy7vimqTwDVF5hzjwFjc5WQhbAcfVCKgi2018W5x0Coeu4Roo1SOs
