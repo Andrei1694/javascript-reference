@@ -35,6 +35,7 @@ const server = http.createServer(app);
 server.listen(3000);
 
 ### Using Middleware
+![alt text](image.jpg)
 PICTURE
 In the end middleware means that an incoming request is automatically funneled(canalizat) through a bunch of functions
 by expressjs, so instead of just having one request handler, you will actually have a possibility of hooking in multiple
@@ -52,8 +53,9 @@ continue to the next middleware. Express.js dosen't send a default response.
 res.send() allows instead of setting a header which we still can do and writing which we also still can do, so we can still
 send responses as before but instead of doing this, there is a new utility function we can use, send. Send allows us to send a response and actually this allows us to attach a body which is of type any.
 
+`javascript
 res.send("<h1>Hello</h1>);
-
+`
 you will see that under headers, the content type is automatically set to text html here.
 So this is done for you,
 this is another feature provided by express here. The send method by default here
