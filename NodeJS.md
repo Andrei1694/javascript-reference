@@ -70,6 +70,31 @@ res.send("<h1>Hello</h1>);
 You will see that under headers, the content type is automatically set to text html here.
 So this is done for you, this is another feature provided by express here. The send method by default here since we send some text here simply sets an html content type, you can still set one manually with set header of course, so you can always override this expressjs default but you can also rely on the default where the default response header is text html.
 
+### Express Routing
+Create a javascript file for the route you want to create.
+#### 1. First we want to import express.js
+`
+const express = require('expresss');
+`
+#### 2. Create the Router
+`
+const router = express.Router();
+`
+This is like a mini express app that is plugable in the main express app.
+#### 3. We need to export the file(at the end of the file)
+`
+module.exports = router;
+`
+#### 5. Add the routes you want to register
+`
+router.use(...) // This is like app.use, app.post etc.
+`
+#### 6. Import in the app 
+`
+const indexRoute = require('./routes/index.js');
+`
+When adding a new route to the main app you must always keep in mind that the order of execution is still the same.
+### To Do 
 1. Create the app.js file
 2. Initialize the npm project
 3. Install Nodemon as an production dependancy
