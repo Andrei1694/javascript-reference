@@ -26,6 +26,34 @@ npm cache clean
 
 ### Angular Routing
 
+### Angular Forms
+Need to register FormsModule
+## Register the Form
+
+We register a form control using the ngModel directive
+pic
+When we register a control we need to specify a name.
+name = "username"
+To submit the data of the form we need to create a method that is called when we press the submit button.
+In the form-component.ts file we create a a function named onSubmit()
+
+```html
+<form (ngSubmit) = "onSubmit()" #f = "ngForm">
+```
+Angular will create a JavaScript object representing the form. 
+This object represents the STATE of the form.
+
+dirty: if we changed the input value of a field
+touched: if we clicked the input field
+
+## Accesing the Form With @ViewChield()
+
+```
+@ViewChild('formF') signUpForm: NgForm
+```
+Recommanded for when we want to acces the form before clicking the onSubmit() button.
+
+
 
 ### How to...
 - How to add Bulma to Angular
