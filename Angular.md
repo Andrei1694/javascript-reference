@@ -27,7 +27,17 @@ npm cache clean
 ### Angular Routing
 
 ### Angular Forms
-Need to register FormsModule
+
+Angular help's us with
+* getting an object representation of the form
+* validation
+
+There are two aproches:
+1) Template Driven (TD)
+2) Reactive Driven (RD) 
+
+Need to register FormsModule and impoort
+
 ## Register the Form
 
 We register a form control using the ngModel directive
